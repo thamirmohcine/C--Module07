@@ -16,7 +16,7 @@ class Array{
                 delete[] Arr;
                 if (other.ArrSize > 0){
                     this->Arr = new T[other.ArrSize];
-                    for (int i(0); i < other.ArrSize;i++){ this->Arr[i] = other.Arr[i];}
+                    for (size_t i(0); i < other.ArrSize;i++){ this->Arr[i] = other.Arr[i];}
                     this->ArrSize = other.ArrSize;
                 }
                 else
@@ -31,6 +31,7 @@ class Array{
             return Arr[index];
         }
         const T& operator[](size_t index) const {
+            std::cout << "You are tring to modify a constant \n";
             if (index >= ArrSize)
                 throw std::exception();
             return Arr[index];

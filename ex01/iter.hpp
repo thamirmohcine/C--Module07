@@ -3,6 +3,11 @@
 
 #include <iostream>
 
+template<typename V>
+void fun(V element){
+    std::cout << "- - : "<< element << std::endl;
+}
+
 template <typename A, typename B>
 
 void iter(A *a,const size_t len, B func){
@@ -10,5 +15,6 @@ void iter(A *a,const size_t len, B func){
         func(a[t]);
     }
 }
+
 
 #endif

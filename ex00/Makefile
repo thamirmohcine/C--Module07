@@ -4,9 +4,9 @@ CC= c++
 
 CPPFLAGS= -std=c++98 -Wall -Wextra -Werror 
 
-SRC= main.cpp whatever.cpp
+SRC= main.cpp 
 
-OBJ= main.o whatever.o
+OBJ= main.o 
 
 HEADER= whatever.hpp
 

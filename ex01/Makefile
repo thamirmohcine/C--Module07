@@ -4,9 +4,9 @@ CC= c++
 
 CPPFLAGS= -std=c++98 -Wall -Wextra -Werror 
 
-SRC= main.cpp iter.cpp
+SRC= main.cpp 
 
-OBJ= main.o iter.o
+OBJ= main.o 
 
 HEADER= iter.hpp
 
